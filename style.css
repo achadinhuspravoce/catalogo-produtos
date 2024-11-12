@@ -1,0 +1,656 @@
+/*
+    Folha de estilo do site One Page HTML5 e CSS3
+    html5css3.com.br
+    @author Professor José de Assis
+    joseassis.com.br
+*/
+
+/* Importação (Google Fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+/* Layout */
+.Container {
+  margin: 0 auto;
+}
+
+.Flex,
+.Flex2,
+.Flex3,
+.Flex4,
+.Flex5,
+.Flex6 {
+  display: flex;
+}
+
+.Flex {
+  justify-content: space-between;
+}
+
+.Flex2 {
+  align-items: center;
+}
+
+.Flex3,
+.Flex6 {
+  flex-direction: column;
+}
+
+.Flex4 {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.Flex5 {
+  flex-direction: column-reverse;
+}
+
+.Flex6 {
+  justify-content: space-around;
+}
+
+/* Botão */
+.botao {
+  text-decoration: none;
+  color: #363636;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+  background-color: #ffbf00;
+  padding: 0.375rem 0.75rem;
+  border: 2px solid #ffbf00;
+  border-radius: 0.375rem;
+}
+
+/* topo do site */
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* Cartões */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.card-title {
+  font-weight: bold;
+}
+.carousel h2 {
+  font-weight: bold;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #363636;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Cabeçalho */
+header {
+  height: 150px;
+  background-color: #363636;
+}
+
+#logo img {
+  width: 128px;
+  height: 128px;
+  margin-top: 40px;
+  position: absolute;
+  left: calc(50% - 60px);
+}
+
+#check {
+  display: none;
+}
+
+#whatsapp_header img {
+  width: 42px;
+  height: 42px;
+  margin-top: 70px;
+  position: absolute;
+  left: calc(50% - 145px);
+}
+
+#telegram_header img {
+  width: 42px;
+  height: 42px;
+  margin-top: 70px;
+  margin-left: 170px;
+  position: absolute;
+  left: calc(50% - 60px);
+}
+
+#texto_canais {
+  display: none;
+}
+
+label {
+  font-size: 1.85em;
+  position: fixed;
+  top: 5px;
+  right: 15px;
+  color: #FCFCFE;
+}
+
+nav ul {
+  list-style: none;
+  background-color: rgba(52, 53, 56, 0.95);
+  height: 100vh;
+  position: fixed;
+  top: 40px;
+  right: -50%;
+  width: 50%;
+  transition: all 0.5s;
+}
+
+#check:checked~ul {
+  right: 0;
+}
+
+nav ul li {
+  padding: 10px;
+  border-bottom: 1px dashed #FCFCFE;
+  text-align: right;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FCFCFE;
+}
+
+/* Destaque */
+main {
+  height: 51vh;
+  /*background: url(img/banner.png);*/
+  background-color: #f2eeeb;
+  background-size: cover;
+  background-position: center;
+  color: #363636;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.1em;
+  font-weight: bold;
+}
+
+main h2 {
+  font-size: 1.01em;
+  margin-bottom: 40x;
+}
+
+.parceiros {
+  position: absolute;
+  left: calc(50% - 200px);
+}
+
+.parceiros img{
+  width: 90px; 
+}
+
+.parceiros h3 {
+  font-size: 0.90em;
+  text-align: center;
+}
+
+/* Sobre */
+#sobre {
+  padding: 50px 0px;
+  background-color: #FCFCFE;
+  background-size: cover;
+  background-position: center;
+}
+
+#sobre h5 {
+  text-align: center;
+  
+}
+
+#destaqueSobre {
+  display: none;
+}
+
+#textoSobre {
+  color: #363636;
+  padding: 0px 10px;
+}
+
+#textoSobre h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.TopicosSobre {
+  margin-top: 20px;
+}
+
+.TopicosSobre img {
+  margin-right: 10px;
+}
+
+/* One page */
+#onepage {
+  padding: 50px 10px;
+}
+
+#onepage h2 {
+  margin-bottom: 10px;
+}
+
+#onepage p {
+  margin-bottom: 25px;
+}
+
+#video iframe {
+  width: 340px;
+  height: 191px;
+  border: 0;
+}
+
+/* Wireframe */
+#wireframe {
+  padding: 50px 0px;
+  /*background: url(img/fundo_social_midia.svg);
+  background-color: rgba(239, 184, 16, 0.5);*/
+  background-color: #f2eeeb;
+  background-size: cover;
+  background-position: center;
+}
+
+.canais_catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#texto_redessociais {
+  width: 340px;
+  text-align: center;
+  font-size: 1.25em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#textoWire {
+  color: #fff;
+  padding: 0px 10px;
+}
+
+#textoWire h2 {
+  margin-bottom: 10px;
+}
+
+#textoWire p {
+  margin-bottom: 40px;
+}
+
+#textoWire span {
+  display: none;
+}
+
+#qrcode {
+  display: none;
+}
+
+#qrcode_wa, #qrcode_te {
+  display: none;
+}
+
+/* Conteúdo */
+#conteudo {
+  padding: 50px 0px;
+}
+
+#conteudo h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#todos {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#todos a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+/* Rodapé */
+address {
+  padding: 35px 10px 50px 10px;
+  background: url(img/background2.png);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+address a {
+  text-decoration: none;
+  color: #fff;
+}
+
+address img {
+  padding-top: 15px;
+}
+
+#iconeLocal {
+  display: none;
+}
+
+#dados {
+  margin: 30px 0px 15px 0px;
+}
+
+#googleMaps {
+  display: none;
+}
+
+footer {
+  padding: 50px 0px;
+  background-color: #2B3D5B;
+  font-size: 0.875em;
+  color: #fff;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#social {
+  margin-bottom: 25px;
+}
+
+#social img {
+  width: 30;
+  height: 30px;
+}
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+
+  /* Layout */
+  .Container {
+    max-width: 540px;
+  }
+
+  /* Destaque */
+  main {
+    height: 77vh;
+  }
+
+  /* One page */
+  #video iframe {
+    width: 560px;
+    height: 315px;
+  }
+
+  /* Rodapé */
+  .Flex5 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #social {
+    margin: 0;
+  }
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+
+  /* Layout */
+  .Container {
+    max-width: 720px;
+  }
+
+  /* Destaque */
+  main {
+    height: 50vh;
+  }
+
+  main h1 {
+    font-size: 5.8em;
+  }
+
+  main h2 {
+    font-size: 2.3em;
+  }
+
+  /*
+  .card img {
+    height: 11em;
+  }
+  */
+}
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+
+  /* Layout */
+  .Container {
+    max-width: 960px;
+  } 
+}
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+
+  /* Layout */
+  .Container {
+    max-width: 1140px;
+  }
+
+  /* Cabeçalho */
+  header {
+    height: 135px;
+  }
+
+  #logo img {
+    width: 128px;
+    height: 128px;
+    margin-top: 25px;
+    position: relative;
+  }
+
+  #whatsapp_header img {
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
+    margin-left: 0px;
+    position: absolute;
+    left: calc(50% - 60px);
+  }
+
+  #telegram_header img {
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
+    margin-left: 29px;
+    position: absolute;
+    left: calc(50% - 60px);
+  }
+
+  #texto_canais {
+    display: block;
+    font-size: 0.9em;
+    position: absolute;
+    left: calc(50% - 60px);
+    margin-left: 60px;
+    top: 6px;
+    color: #FCFCFE;
+  }
+
+  label {
+    display: none;
+  }
+
+  nav ul {
+    position: static;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    margin-top: 40px;
+  }
+
+  nav ul li {
+    float: left;
+    border: 0;
+  }
+
+  nav ul li a {
+    color: #FCFCFE;
+  }
+
+  nav ul li a:hover {
+    color: #ffbf00;
+  }
+
+  /* Destaque */
+  main {
+    height: 60vh;
+  }
+
+  main h1 {
+    font-size: 4.8em;
+  }
+
+  .parceiros {
+    position: absolute;
+    justify-content: center;
+    left: calc(50% - 300px);
+    margin-top: 2%;
+  }
+  
+  .parceiros img{
+    width: 150px; 
+  }
+
+  .parceiros h3 {
+    font-size: 1.10em;
+    text-align: center;
+  }
+
+  /* Sobre */
+  #sobre {
+    background-attachment: fixed;
+  }
+
+  #destaqueSobre {
+    display: inline;
+  }
+
+  #destaqueSobre img {
+    border-radius: 50%;
+    margin-right: 50px;
+  }
+
+  /* One page */
+  .Flex3 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Wireframe */
+  #wireframe {
+    background-attachment: fixed;
+  }
+
+  #wireframe span {
+    display: inline;
+  }
+
+  #whatsapp_box {
+    display: inline;
+    flex-direction: row;
+    align-items: left;
+  }
+  
+  #whatsapp_box a {
+    margin-left: 20px;
+  }
+
+  #telegram_box {
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #telegram_box a {
+    margin-right: 20px;
+  }
+
+  #qrcode, #qrcode_wa, #qrcode_te {
+    display: inline;
+  }
+
+  #qrcode img, #qrcode_te img, #qrcode_wa img {
+    width: 225px;
+    height: 225px;
+  }
+  
+  /* Rodapé */
+  .Flex6 {
+    flex-direction: row-reverse;
+  }
+
+  address {
+    padding-top: 50px;
+  }
+
+  #iconeLocal {
+    display: inline;
+  }
+
+  #iconeMapa {
+    display: none;
+  }
+
+  #googleMaps {
+    display: inline;
+  }
+}
